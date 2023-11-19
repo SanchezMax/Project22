@@ -17,8 +17,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNKNOWN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMq-5b-hZY">
-                                <rect key="frame" x="101.00000000000001" y="414.66666666666669" width="191.33333333333337" height="48"/>
+                                <rect key="frame" x="101.00000000000001" y="415" width="191.33333333333337" height="47"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zUz-8t-1wc">
+                                <rect key="frame" x="68.666666666666686" y="109" width="256" height="256"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="UuL-JJ-rGd"/>
+                                    <constraint firstAttribute="height" constant="256" id="v1A-Rz-l04"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOE-tf-kjG">
+                                <rect key="frame" x="196.66666666666666" y="505" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -27,11 +41,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="EMq-5b-hZY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5jJ-sG-Ujg"/>
+                            <constraint firstItem="EMq-5b-hZY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="zUz-8t-1wc" secondAttribute="bottom" constant="50" id="CGN-6C-Vt7"/>
+                            <constraint firstItem="zUz-8t-1wc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PAq-r7-iem"/>
                             <constraint firstItem="EMq-5b-hZY" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="SAJ-4M-aIv"/>
+                            <constraint firstItem="cOE-tf-kjG" firstAttribute="top" secondItem="EMq-5b-hZY" secondAttribute="bottom" constant="43" id="X02-gr-6o7"/>
+                            <constraint firstItem="cOE-tf-kjG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rgo-nY-TeV"/>
+                            <constraint firstItem="zUz-8t-1wc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="zwq-aV-EKp"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="circleRange" destination="zUz-8t-1wc" id="hX0-kf-PcE"/>
                         <outlet property="distanceReading" destination="EMq-5b-hZY" id="fn9-dD-xvt"/>
+                        <outlet property="idLabel" destination="cOE-tf-kjG" id="Ghv-N2-ASF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
