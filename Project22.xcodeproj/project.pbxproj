@@ -295,6 +295,8 @@
 				DEVELOPMENT_TEAM = 75HJK5L45N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Project22/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We want to help you find the nearest store";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We want to help you find the nearest store";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,6 +325,8 @@
 				DEVELOPMENT_TEAM = 75HJK5L45N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Project22/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We want to help you find the nearest store";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We want to help you find the nearest store";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
